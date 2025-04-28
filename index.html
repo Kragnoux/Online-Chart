@@ -1,139 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .ranking-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            width: 500px;
-            padding: 25px;
-            text-align: center;
-        }
-        .header {
-            background: linear-gradient(135deg, #ff8a00, #e52e71);
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-size: 22px;
-            font-weight: bold;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .highlight {
-            background-color: #fffacd;
-            font-weight: bold;
-        }
-        .gold { color: #FFD700; }
-        .silver { color: #C0C0C0; }
-        .bronze { color: #CD7F32; }
-        .special {
-            background-color: #ffeb3b;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Mejores Conductores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="ranking-card">
         <div class="header">
-            🚗🌟 TOPMEJORES CONDUCTORES🌟🚗
+            🚗🌟 TOPMEJORES CONDUCTORES 🌟🚗
         </div>
         
         <table>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Código</th>
-                <th>Efectivo</th>
-            </tr>
-            <tr class="highlight">
-                <td>🥇</td>
-                <td>Benegas Zapata Alex Michel</td>
-                <td>5766DIU</td>
-                <td class="gold">$200.00 👑</td>
-            </tr>
-            <tr>
-                <td>🥈</td>
-                <td>Cordich Arauz Petter</td>
-                <td>6410CED</td>
-                <td class="silver">$188.00 🚛</td>
-            </tr>
-            <tr>
-                <td>🥉</td>
-                <td>Soto Ovando Mijail</td>
-                <td>6428IAF</td>
-                <td class="bronze">$163.00 💪</td>
-            </tr>
-            <tr class="special">
-                <td>4</td>
-                <td>⭐ GIL VARGAS HANDY ⭐</td>
-                <td>6410CKY</td>
-                <td style="color: #FF5722; font-weight: bold;">$165.00 🔥</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Loria Fernandez Jose Joaquin</td>
-                <td>5752HKF</td>
-                <td>$162.00</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Molina Austen Victor Hugo</td>
-                <td>6410CBR</td>
-                <td>$160.00</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Cordich Camacho Moisés Noel</td>
-                <td>6410CHP</td>
-                <td>$116.00</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Velarde Alvarez Cristhian</td>
-                <td>6433IYS</td>
-                <td>$51.00</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Morales Carballo Jose Carlos</td>
-                <td>6443KFE</td>
-                <td>$28.00</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Franco Parada Jose Luis</td>
-                <td>6443IFD</td>
-                <td>$13.00</td>
-            </tr>
-        </table>
-        
-        <div style="margin-top: 20px; font-style: italic; color: #e52e71;">
-            ⭐ ¡Handy Gil rompió el molde! De estar en el anonimato al TOP 5 ⭐
-        </div>
-    </div>
-</body>
-</html>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Código</th>
+                    <th>Efectivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight">
+                    <td data-label="#">🥇</td>
+                    <td data-label="Nombre">Benegas Zapata Alex Michel</td>
+                    <td data-label="Código">5766DIU</td>
+
+
