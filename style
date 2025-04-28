@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ranking-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.highlight {
+    background-color: #fffacd;
+    font-weight: bold;
+}
+
+.gold { color: #FFD700; }
+.silver { color: #C0C0C0; }
+.bronze { color: #CD7F32; }
+
+.special {
+    background-color: #ffeb3b;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.footnote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #e52e71;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .ranking-card {
+        padding: 15px;
+    }
+    .header {
+        font-size: 18px;
+        padding: 10px;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        margin-bottom: 15px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    td {
+        padding: 8px 10px;
+        text-align: left;
+        border: none;
+        font-size: 15px;
+    }
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+}
